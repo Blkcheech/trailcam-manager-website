@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TrailCam Manager — Know Where Every Camera Is</title>
+  <meta name="description" content="TrailCam Manager is a native iPhone app for serious hunters. GPS coordinates, offline navigation, battery tracking, and placement history for all your trail cameras — with no cell service required.">
+  <meta property="og:title" content="TrailCam Manager">
+  <meta property="og:description" content="Know where every trail camera is. GPS, offline navigation, history, and equipment tracking in your pocket.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trailcammanager.com">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════
+     NAV
+════════════════════════════════════════════════════════ -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <div class="nav-logo-icon">🦌</div>
+      TrailCam Manager
+    </a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#how-it-works">How It Works</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="#support">Support</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#download" class="btn-gold">Download — $4.99</a>
+    </div>
+    <div class="nav-hamburger" role="button" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════════ -->
+<section class="hero" id="download">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <div class="hero-badge">Coming to the App Store · iPhone</div>
+      <h1>Know Where Every <em>Camera</em> Is.</h1>
+      <p class="hero-sub">
+        TrailCam Manager keeps all your trail cameras organized — GPS coordinates, battery status, deployment history, and offline navigation. Stand anywhere in the woods and find any camera, even with zero cell service.
+      </p>
+      <div class="hero-actions">
+        <!-- Replace href with real App Store link when live -->
+        <a href="#" class="hero-appstore" id="appstore-btn">
+          <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
+          <div class="hero-appstore-text">
+            <small>Download on the</small>
+            App Store
+          </div>
+        </a>
+        <span class="hero-note">iOS only · $4.99 one-time · No subscription</span>
+      </div>
+    </div>
+
+    <!-- CSS Phone Mockup -->
+    <div class="phone-wrap">
+      <div class="phone-glow"></div>
+      <div class="phone">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-status">
+            <span>9:41</span>
+            <span>⚡ 87%</span>
+          </div>
+          <div class="phone-map-area">
+            <!-- Fake camera pins on the satellite map -->
+            <div class="phone-pin active" style="top:28%; left:38%;">📍</div>
+            <div class="phone-pin active" style="top:55%; left:62%;">📍</div>
+            <div class="phone-pin active" style="top:40%; left:72%;">📍</div>
+            <div class="phone-pin pulled" style="top:70%; left:30%;">📍</div>
+          </div>
+          <div class="phone-tab-bar">
+            <div class="phone-tab"><div class="phone-tab-icon">🏠</div><span>Properties</span></div>
+            <div class="phone-tab active"><div class="phone-tab-icon">🗺️</div><span>Map</span></div>
+            <div class="phone-tab"><div class="phone-tab-icon">📊</div><span>History</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     PHOTO STRIP
+     Replace src="" with real photo paths once available.
+     Use verified buck photos from Cuddeback camera.
+════════════════════════════════════════════════════════ -->
+<div class="photo-strip">
+  <div class="photo-strip-item">
+    <!-- TODO: replace with real photo: assets/images/buck1.jpg -->
+    <div class="photo-placeholder">🦌</div>
+    <div class="photo-overlay">
+      <div class="photo-caption">Verified Buck</div>
+      <div class="photo-sub">Cuddeback trail camera · 2023</div>
+    </div>
+  </div>
+  <div class="photo-strip-item">
+    <!-- TODO: replace with real photo: assets/images/buck2.jpg -->
+    <div class="photo-placeholder">🦌</div>
+    <div class="photo-overlay">
+      <div class="photo-caption">Verified Buck</div>
+      <div class="photo-sub">Cuddeback trail camera · 2023</div>
+    </div>
+  </div>
+  <div class="photo-strip-item">
+    <!-- TODO: replace with real photo: assets/images/buck3.jpg -->
+    <div class="photo-placeholder">🦌</div>
+    <div class="photo-overlay">
+      <div class="photo-caption">Verified Buck</div>
+      <div class="photo-sub">Cuddeback trail camera · 2023</div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FEATURES
+════════════════════════════════════════════════════════ -->
+<section class="features" id="features">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Features</div>
+      <h2 class="section-title">Everything you need in the field.</h2>
+      <p class="section-sub">Built for hunters who run multiple cameras across multiple properties. No guesswork, no spreadsheets.</p>
+    </div>
+
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🗺️</div>
+        <h3>Satellite Map with Camera Pins</h3>
+        <p>Every active camera appears as a pin on a hybrid satellite map. Tap any pin to see camera details, direction it's facing, and how long it's been deployed. Works on iOS Maps offline basemaps.</p>
+        <span class="feature-tag">→ Phase 2 Complete</span>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🧭</div>
+        <h3>Offline GPS Navigator</h3>
+        <p>A gold compass arrow rotates to point directly at any selected camera. Uses only your phone's GPS and magnetometer — no cell signal needed. Works deep in the woods, in a canyon, anywhere you have sky view.</p>
+        <span class="feature-tag">→ No internet required</span>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">📊</div>
+        <h3>History &amp; Analytics</h3>
+        <p>Full deployment history for every camera and location. Instantly see which spots haven't had a camera in months, how long each camera has been sitting, and a full timeline of what was where and when.</p>
+        <span class="feature-tag">→ Never lose track again</span>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔋</div>
+        <h3>Equipment Tracking</h3>
+        <p>Log the SD card size, battery type and count for each placement. Record when you last changed batteries — the app shows how many days ago and warns you when it's been over 90 days.</p>
+        <span class="feature-tag">→ Stop guessing battery life</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     HOW IT WORKS
+════════════════════════════════════════════════════════ -->
+<section class="how" id="how-it-works">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">How It Works</div>
+      <h2 class="section-title">From truck to stand in minutes.</h2>
+      <p class="section-sub">A simple hierarchy keeps everything organized — Properties → Locations → Placements — so you always know exactly what's where.</p>
+    </div>
+
+    <div class="how-steps">
+
+      <!-- Step 1 -->
+      <div class="how-step reveal">
+        <div>
+          <div class="how-step-num">01</div>
+          <h3>Set up your properties and locations</h3>
+          <p>Create a Property for each piece of land. Under each property, add Locations — the specific spots where you hang cameras: a field edge, a creek crossing, a scrape.</p>
+          <ul>
+            <li>Add notes to each location</li>
+            <li>Works offline — syncs when you're back in range</li>
+            <li>No limit on properties or locations</li>
+          </ul>
+        </div>
+        <div class="screenshot-frame">
+          <div class="screenshot-bar">
+            <div class="screenshot-dot"></div><div class="screenshot-dot"></div><div class="screenshot-dot"></div>
+            <div class="screenshot-title">Properties</div>
+          </div>
+          <div class="screenshot-body">
+            <div class="screen-list">
+              <div class="screen-list-item">
+                <div class="screen-list-dot active"></div>
+                <div class="screen-list-lines">
+                  <div class="screen-list-line" style="width:70%"></div>
+                  <div class="screen-list-line short" style="margin-top:5px;opacity:.5"></div>
+                </div>
+              </div>
+              <div class="screen-list-item">
+                <div class="screen-list-dot active"></div>
+                <div class="screen-list-lines">
+                  <div class="screen-list-line" style="width:55%"></div>
+                  <div class="screen-list-line short" style="margin-top:5px;opacity:.5"></div>
+                </div>
+              </div>
+              <div class="screen-list-item">
+                <div class="screen-list-dot dim"></div>
+                <div class="screen-list-lines">
+                  <div class="screen-list-line" style="width:80%"></div>
+                  <div class="screen-list-line short" style="margin-top:5px;opacity:.5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="how-step reverse reveal">
+        <div>
+          <div class="how-step-num">02</div>
+          <h3>Deploy a camera — GPS captured automatically</h3>
+          <p>Tap Deploy Camera at any location. Your GPS coordinates are grabbed the moment you open the form. Set the direction using the built-in compass picker or the 8-point manual picker.</p>
+          <ul>
+            <li>Stand facing the same direction as the camera — tap to set direction</li>
+            <li>Log SD card, battery type, count, and change date</li>
+            <li>Attach a photo of the placement for future reference</li>
+          </ul>
+        </div>
+        <div class="screenshot-frame">
+          <div class="screenshot-bar">
+            <div class="screenshot-dot"></div><div class="screenshot-dot"></div><div class="screenshot-dot"></div>
+            <div class="screenshot-title">Deploy Camera</div>
+          </div>
+          <div class="screenshot-body">
+            <div class="screen-equip">
+              <div class="screen-equip-row">
+                <span class="screen-equip-icon">📍</span>
+                <div class="screen-equip-line" style="width:60%"></div>
+              </div>
+              <div class="screen-equip-row">
+                <span class="screen-equip-icon">🧭</span>
+                <div class="screen-equip-line" style="width:30%"></div>
+              </div>
+              <div class="screen-equip-row">
+                <span class="screen-equip-icon">💾</span>
+                <div class="screen-equip-line" style="width:40%"></div>
+              </div>
+              <div class="screen-equip-row">
+                <span class="screen-equip-icon">🔋</span>
+                <div class="screen-equip-line" style="width:50%"></div>
+              </div>
+              <div class="screen-equip-row">
+                <span class="screen-equip-icon">📷</span>
+                <div class="screen-equip-line" style="width:35%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 3 -->
+      <div class="how-step reveal">
+        <div>
+          <div class="how-step-num">03</div>
+          <h3>See all your cameras on the satellite map</h3>
+          <p>The Map tab shows every active camera as a directional pin. Tap any pin for a callout showing the location, property, camera label, and direction. From there you can navigate to it or jump straight to its full history.</p>
+          <ul>
+            <li>Long-press anywhere on the map to drop a pin and deploy from there</li>
+            <li>Auto-zooms to fit all your cameras</li>
+            <li>Hybrid satellite imagery — see the actual terrain</li>
+          </ul>
+        </div>
+        <div class="screenshot-frame">
+          <div class="screenshot-bar">
+            <div class="screenshot-dot"></div><div class="screenshot-dot"></div><div class="screenshot-dot"></div>
+            <div class="screenshot-title">Map</div>
+          </div>
+          <div class="screenshot-body" style="padding:0; overflow:hidden; border-radius: 0 0 16px 16px;">
+            <div class="screen-map" style="border-radius:0; height:220px;">
+              <div class="map-pin-demo" style="top:25%; left:32%"></div>
+              <div class="map-pin-demo" style="top:50%; left:58%"></div>
+              <div class="map-pin-demo" style="top:35%; left:72%"></div>
+              <div class="map-pin-demo" style="top:68%; left:20%; background: rgba(100,100,100,0.2); border-color:#556b5e; box-shadow:none;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 4 -->
+      <div class="how-step reverse reveal">
+        <div>
+          <div class="how-step-num">04</div>
+          <h3>Navigate to any camera — no cell service needed</h3>
+          <p>Tap Navigate on any map pin. A large gold arrow rotates in real time to point directly at the camera. Walk toward it. The distance counts down in feet or miles as you close in.</p>
+          <ul>
+            <li>Uses only your phone's GPS and compass — zero internet</li>
+            <li>Distance updates every second</li>
+            <li>Bearing in degrees plus cardinal direction</li>
+          </ul>
+        </div>
+        <div class="screenshot-frame">
+          <div class="screenshot-bar">
+            <div class="screenshot-dot"></div><div class="screenshot-dot"></div><div class="screenshot-dot"></div>
+            <div class="screenshot-title">Navigate to Camera</div>
+          </div>
+          <div class="screenshot-body">
+            <div class="screen-compass">
+              <div class="compass-ring">
+                <div class="compass-arrow"></div>
+              </div>
+              <div class="compass-label" style="color:var(--gold); font-size:.9rem; font-weight:700;">312 ft · NW · 307°</div>
+              <div class="compass-label">Hold phone flat · turn until arrow points up</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Step 5 -->
+      <div class="how-step reveal">
+        <div>
+          <div class="how-step-num">05</div>
+          <h3>Track history and know what needs attention</h3>
+          <p>The History tab shows a full deployment timeline for every camera and location. The analytics card surfaces exactly which spots have gone uncovered — and for how long.</p>
+          <ul>
+            <li>Days since last battery change — orange warning after 90 days</li>
+            <li>Uncovered locations sorted by longest gap</li>
+            <li>Camera label history — see every spot that camera has ever been</li>
+          </ul>
+        </div>
+        <div class="screenshot-frame">
+          <div class="screenshot-bar">
+            <div class="screenshot-dot"></div><div class="screenshot-dot"></div><div class="screenshot-dot"></div>
+            <div class="screenshot-title">History</div>
+          </div>
+          <div class="screenshot-body">
+            <div class="screen-history">
+              <div class="screen-history-card">
+                <div class="screen-history-bar">
+                  <div class="screen-history-label" style="width:60%"></div>
+                </div>
+                <div class="screen-history-fill" style="width:80%"></div>
+              </div>
+              <div class="screen-history-card">
+                <div class="screen-history-bar">
+                  <div class="screen-history-label" style="width:45%"></div>
+                </div>
+                <div class="screen-history-fill" style="width:60%"></div>
+              </div>
+              <div class="screen-equip-row warn" style="margin-top:4px;">
+                <span class="screen-equip-icon">🔋</span>
+                <div class="screen-equip-line"></div>
+                <span class="screen-equip-badge">97d ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /how-steps -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FAQ
+════════════════════════════════════════════════════════ -->
+<section class="faq" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">FAQ</div>
+      <h2 class="section-title">Common questions.</h2>
+    </div>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Does it work without cell service?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Yes — the GPS navigator uses only your phone's hardware (GPS satellite + compass magnetometer). No internet, no cell towers. It works the same way a standalone GPS unit does. You can also view cached map tiles and all your camera data offline. The app syncs changes to the cloud when you're back in range.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          What does it cost?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>$4.99 one-time purchase. No subscription, no in-app purchases, no ads. Pay once, use it every season. Hunting season features — including group sharing with hunting partners — may be offered as a future optional upgrade.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          What iPhone models and iOS versions are supported?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Any iPhone running iOS 17 or later. This covers iPhone XS and newer. The app is optimized for iPhone — iPad is not currently supported.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Is my data private and secure?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Yes. Your data is stored in a secure, encrypted database with row-level security — only your account can access your properties, locations, and placements. Your GPS coordinates are never shared or sold. See the <a href="privacy.html">Privacy Policy</a> for full details.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Can I share my camera locations with hunting partners?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Not yet — group sharing is planned for a future update. The planned feature will let you share a property with hunting partners at different permission levels (owner, member, viewer). For now, each account sees only its own data.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          What happens if I move a camera to a new spot?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>The app tracks placements, not just cameras. If you change the GPS coordinates or direction of a placement, it automatically closes the current record (marking today as the pull date) and opens a new one. That way you always have a full history of where each camera has been and for how long. Changes to notes, photos, battery info, or camera label update in place without creating a new record.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q">
+          Does the app work with any brand of trail camera?
+          <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <div class="faq-a">
+          <p>Yes. TrailCam Manager is brand-agnostic — it manages the location and metadata of any physical trail camera. Cuddeback, Reconyx, Browning, Stealth Cam, Moultrie, Bushnell — all work the same way. The app doesn't pull images from cameras; it tracks where they are and how they're equipped.</p>
+        </div>
+      </div>
+
+    </div><!-- /faq-list -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     SUPPORT
+════════════════════════════════════════════════════════ -->
+<section class="support" id="support">
+  <div class="container">
+    <div class="reveal">
+      <div class="section-label">Support</div>
+      <h2 class="section-title">We're here to help.</h2>
+      <p class="section-sub">Found a bug? Have a question? Use the form or reach out directly.</p>
+    </div>
+
+    <div class="support-grid">
+
+      <!-- Contact form -->
+      <div class="support-card reveal">
+        <h3>Send a message</h3>
+        <p>Use this form to report a bug, request a feature, or ask a general question. We aim to respond within 2 business days.</p>
+        <!-- Replace YOUR_FORM_ID with Formspree form ID after signing up at formspree.io -->
+        <form class="support-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <div class="form-field">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+          </div>
+          <div class="form-field">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="form-field">
+            <label for="type">Topic</label>
+            <select id="type" name="type">
+              <option value="bug">Bug Report</option>
+              <option value="feature">Feature Request</option>
+              <option value="account">Account / Login Issue</option>
+              <option value="other">General Question</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Describe the issue or question…" required></textarea>
+          </div>
+          <button type="submit" class="form-submit">Send Message</button>
+        </form>
+      </div>
+
+      <!-- Quick links -->
+      <div class="support-card reveal">
+        <h3>Other ways to reach us</h3>
+        <p>For bug reports and feature requests, GitHub Issues is the fastest way to get a response and lets you track progress.</p>
+
+        <div class="support-links">
+          <a href="https://github.com/Blkcheech/TrailCam-Manager-iOS/issues/new?template=bug_report.md"
+             class="support-link" target="_blank" rel="noopener">
+            <div class="support-link-icon">🐛</div>
+            <div class="support-link-text">
+              <strong>Report a Bug</strong>
+              <span>Open a GitHub Issue · tracked publicly</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/Blkcheech/TrailCam-Manager-iOS/issues/new?template=feature_request.md"
+             class="support-link" target="_blank" rel="noopener">
+            <div class="support-link-icon">💡</div>
+            <div class="support-link-text">
+              <strong>Request a Feature</strong>
+              <span>Open a GitHub Issue · vote with 👍</span>
+            </div>
+          </a>
+
+          <a href="mailto:support@trailcammanager.com" class="support-link">
+            <div class="support-link-icon">✉️</div>
+            <div class="support-link-text">
+              <strong>Email Support</strong>
+              <span>support@trailcammanager.com</span>
+            </div>
+          </a>
+
+          <a href="privacy.html" class="support-link">
+            <div class="support-link-icon">🔒</div>
+            <div class="support-link-text">
+              <strong>Privacy Policy</strong>
+              <span>How your data is stored and protected</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </div><!-- /support-grid -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-logo">🦌 TrailCam Manager</div>
+      <ul class="footer-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="#support">Support</a></li>
+      </ul>
+      <div class="footer-copy">&copy; 2025 TrailCam Manager. All rights reserved.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
