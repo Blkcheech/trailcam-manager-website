@@ -32,23 +32,24 @@
 <div class="policy">
   <a href="/" class="policy-back">← Back to Home</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: April 9, 2025</p>
+  <p class="updated">Last updated: June 2, 2026</p>
 
   <h2>Overview</h2>
-  <p>TrailCam Manager ("the App", "we", "us") is a native iOS application for managing trail camera placements. We take your privacy seriously. This policy describes what data we collect, how we use it, and your rights.</p>
+  <p>TrailCam Manager ("the App", "we", "us") is a native iOS application for managing trail camera placements. The App requires no account and sends no data to any server. Everything you enter stays on your device.</p>
 
   <h2>What We Collect</h2>
-  <p>When you create an account and use the App, we collect:</p>
+  <p>The App stores the following data <strong>locally on your device only</strong>:</p>
   <ul>
-    <li><strong>Email address</strong> — used for account creation and login only</li>
     <li><strong>GPS coordinates</strong> — the latitude and longitude you choose to record for each camera placement</li>
-    <li><strong>Placement data</strong> — camera labels, directions, dates, notes, equipment details (SD card, battery info) that you enter</li>
-    <li><strong>Placement photos</strong> — photos you optionally attach to placements, stored in private cloud storage</li>
+    <li><strong>Placement data</strong> — camera labels, directions, dates, notes, and equipment details (SD card, battery info) that you enter</li>
+    <li><strong>Placement photos</strong> — photos you optionally attach to placements, stored in the app's private documents directory on your device</li>
   </ul>
-  <p>We do not collect location data in the background. GPS is only accessed when you explicitly tap "Use My Current Location" or open the offline GPS navigator, and only while the App is in the foreground.</p>
+  <p>We do not collect location data in the background. GPS is only accessed when you explicitly tap "Use My Current Location" or open the GPS navigator, and only while the App is in the foreground.</p>
 
   <h2>What We Do Not Collect</h2>
   <ul>
+    <li>We do not collect your email address, name, or any account information — no account is required</li>
+    <li>We do not transmit any data to external servers</li>
     <li>We do not collect crash analytics, usage telemetry, or behavioral tracking data</li>
     <li>We do not access your photo library except when you explicitly choose to attach a photo</li>
     <li>We do not track your location in the background</li>
@@ -56,31 +57,26 @@
   </ul>
 
   <h2>How Your Data Is Stored</h2>
-  <p>Your data is stored in Supabase, a secure cloud database platform, with the following protections:</p>
-  <ul>
-    <li>Row-level security ensures your account can only access your own data</li>
-    <li>All connections are encrypted in transit (TLS)</li>
-    <li>Placement photos are stored in private cloud storage — inaccessible without a valid authenticated session</li>
-    <li>Your data is never shared with third parties and is never sold</li>
-  </ul>
-  <p>The App also caches data locally on your device (in the app's private documents directory) to enable offline access. This local data is not accessible to other apps and is removed when you delete the App.</p>
+  <p>All data is stored exclusively on your device in the app's private documents directory. It is not accessible to other apps and is removed when you delete the App.</p>
+  <p>If you have iCloud Backup enabled on your device, Apple will include the App's documents directory in your iCloud backup. This backup is encrypted and controlled entirely by your Apple ID. We have no access to it.</p>
+  <p>The App's Settings tab lets you export a backup file manually and save it anywhere you choose (including iCloud Drive), and restore from that file on a new device. This backup is a local file transfer — no data passes through our servers.</p>
 
   <h2>Third-Party Services</h2>
   <ul>
-    <li><strong>Supabase</strong> — database and authentication backend. <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase Privacy Policy</a></li>
     <li><strong>Apple MapKit</strong> — satellite map tiles. Governed by <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a></li>
     <li><strong>Apple App Store</strong> — app distribution. Apple may collect app store analytics per their policies</li>
+    <li><strong>Apple iCloud</strong> — optional device backup, controlled by your Apple ID settings</li>
   </ul>
-  <p>We do not use any advertising networks, analytics SDKs, or social media integrations.</p>
+  <p>We do not use any advertising networks, analytics SDKs, cloud backends, or social media integrations.</p>
 
-  <h2>Data Retention and Deletion</h2>
-  <p>Your data is retained as long as your account is active. To delete your account and all associated data, email <a href="mailto:support@trailcammanager.com">support@trailcammanager.com</a> with the subject "Delete My Account". We will permanently delete all your data within 30 days.</p>
+  <h2>Data Deletion</h2>
+  <p>Because no data is stored on our servers, deleting the App from your device removes all data the App has stored. You can also clear all data at any time from within the App via Settings → Clear All Data.</p>
 
   <h2>Children's Privacy</h2>
-  <p>The App is not directed at children under 13. We do not knowingly collect personal information from children. If you believe a child has provided us with information, contact us and we will delete it.</p>
+  <p>The App is not directed at children under 13. We do not knowingly collect personal information from children.</p>
 
   <h2>Changes to This Policy</h2>
-  <p>If we make material changes to this policy, we will update the "Last updated" date above and notify users via the App where required by applicable law.</p>
+  <p>If we make material changes to this policy, we will update the "Last updated" date above.</p>
 
   <h2>Contact</h2>
   <p>Questions about this Privacy Policy? Contact us at <a href="mailto:support@trailcammanager.com">support@trailcammanager.com</a>.</p>
